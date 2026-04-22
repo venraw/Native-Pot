@@ -368,6 +368,8 @@ nav {
     background-image: linear-gradient(rgba(4,9,30,0.7)),url(native\ kitchen.png);
     background-size: cover;
 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
 
     background-position: center;
     min-height: 200px;
@@ -739,6 +741,16 @@ nav {
     text-align: center;
 }
 
+
+
+
+.mission{
+    background: rgb(13, 13, 13);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 100px;
+}
 
 
 
