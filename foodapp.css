@@ -35,7 +35,7 @@ p, a {
     rgba(0,0,0,0.8),
     rgba(0,0,0,0)
     ),
-    url(native\ pot\ picture.webp);
+    url(native\ pot\ picture.png);
     background-size: cover;
     background-position: center;
     margin-bottom: 32px;
@@ -370,7 +370,7 @@ nav {
     rgba(0,0,0,0.7),
     rgba(0,0,0,0.7)
     ),
-    url(native\ kitchen.webp);
+    url(native\ kitchen.png);
 
     background-size: cover;
 
@@ -725,7 +725,7 @@ nav {
     rgba(0,0,0,0.7),
     rgba(0,0,0,0.7)
     ),
-    url(friends.webp);
+    url(friends.png);
     background-size: cover;
     background-position: center;
     color: white;
