@@ -398,7 +398,7 @@ nav {
     max-width: 600px;
 }
 
-.banner a {
+.partner-btn {
     display: flex;
     padding: 10px 16px;
     color: white;
@@ -1070,6 +1070,11 @@ nav {
   }
 
   
+
+
+  .banner {
+    box-shadow: none;
+  }
 
 
  /*----------------- RESTAURANT ---------------------*/
