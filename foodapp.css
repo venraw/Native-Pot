@@ -777,6 +777,58 @@ nav {
 }
 
 
+/* =================================================
+                 FOOTER SECTION
+===================================================*/
+
+.footer {
+    padding: 0 16px 24px;
+}
+
+.email-form {
+    display: FLEX;
+    align-items: center;
+    justify-content: center;
+    gap: 24px 8px;
+    background-color: rgb(13, 13, 13);
+
+    width: 100%;
+    max-width: 700px;
+    padding: 24px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.email {
+    width: 100%;
+    max-width: 300px;
+    color: white;
+}
+.email-form p {
+    font-size: 14px;
+}
+.email-subscribe {
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.email-subscribe button {
+    border: none;
+    background: #d9480f;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+}
+.email-subscribe input {
+    border: none;
+    color: #212529;
+    outline: none;
+    padding: 8px 0;
+}
+
+
 
 
 
@@ -1051,9 +1103,39 @@ nav {
         width: 100%;
         height: 250px;
     }
+    .Spotlight-card {
+        flex-direction: column; /* stacks image on top of text */
+        align-items: center;
+    }
+
+    .spotlight-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .Spotlight-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    object-position: top; /* shows the top of the image where the face is */
+    }
+
+    .Chef-spotlight {
+        padding: 16px;
+        margin-bottom: 48px;
+    }
+    .spotlight-text p{
+        font-size: 12px;
+    }
+
+    .spotlight-text h2 {
+        font-size: 20px;
+    }
 
 
 
+    /*------------ RESTAURANT -------------------*/
     .restaurant-card {
         background: #212529;
         border-radius: 12px;
@@ -1069,8 +1151,7 @@ nav {
 
   }
 
-  
-
+  /*----------------- BANNER ---------------------*/
 
   .banner {
     box-shadow: none;
@@ -1124,9 +1205,6 @@ nav {
   color: #666;
 }
 
-
-
-
  /*----------------- CUSTOMER REVIEWS ---------------------*/
 .reviews h2 {
     text-align: center;
@@ -1134,11 +1212,6 @@ nav {
     color: #d9480f;
     font-size: 18px;
 }
-
-
-
-
-
 
  /*----------------- ADVERT ---------------------*/
 .advert {
@@ -1153,7 +1226,7 @@ nav {
 }
 
 
-
+/*----------------- MISSION ---------------------*/
 .mission-text h1 {
     font-size: 30px;
 }
@@ -1164,43 +1237,41 @@ nav {
 
 
 
+/*----------------- FOOTER ---------------------*/
+
+    .email-form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .email p {
+        font-size: 12px;
+    }
+    .email h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .email-subscribe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
     
 
 }
 
 
 
-/* Mobile — 768px */
-@media (max-width: 768px) {
-    .Spotlight-card {
-        flex-direction: column; /* stacks image on top of text */
-        align-items: center;
-    }
 
-    .spotlight-image {
-        width: 100%;
-        height: 280px;
-    }
 
-    .Spotlight-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    object-position: top; /* shows the top of the image where the face is */
-    }
 
-    .Chef-spotlight {
-        padding: 16px;
-        margin-bottom: 48px;
-    }
-    .spotlight-text p{
-        font-size: 12px;
-    }
-
-    .spotlight-text h2 {
-        font-size: 20px;
-    }
 
 /* Small mobile — 400px */
 @media (max-width: 400px) {
@@ -1228,10 +1299,4 @@ nav {
         padding: 12px;
         margin-bottom: 40px;
     }
-}
-
-
-
-
-
 }
