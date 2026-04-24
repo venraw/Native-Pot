@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
@@ -19,6 +20,15 @@ h1, h2, h3, h4 {
 p, a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+}
+
+.header-links {
+    z-index: 9999;
+}
+
+.header-links.active {
+    right: 0;
+    box-shadow: -200px 0 0 200px rgba(0,0,0,0.5);
 }
 
 
@@ -1386,3 +1396,12 @@ nav {
         margin-bottom: 40px;
     }
 }
+
+/*  Stop Mobile from shaking when animation is on
+@media (max-width: 768px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: none !important;
+  }
+}
+  */
