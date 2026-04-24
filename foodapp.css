@@ -41,7 +41,7 @@ p, a {
     width: 100%;
     background-image: linear-gradient(
     to right,
-    rgba(0,0,0,1.5),
+    rgba(0,0,0,1),
     rgba(0,0,0,0.8),
     rgba(0,0,0,0)
     ),
@@ -87,6 +87,7 @@ nav {
     padding-left: 9%;
     margin-top: 72px;
 }
+
 
 .header-delivery {
     display: flex;
