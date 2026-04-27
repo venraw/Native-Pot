@@ -30,6 +30,13 @@ p, a {
     z-index: 9999;
 }
 
+
+
+
+
+
+
+/*----------------- ADD SHADOW TO HAMBURGER MENU OPEN -----------------*/
 .header-links.active {
     right: 0;
     box-shadow: -200px 0 0 200px rgba(0,0,0,0.5);
@@ -324,6 +331,7 @@ nav {
     color: white;
     border-radius: 40px; 
 }
+
 
 
 
@@ -980,7 +988,7 @@ nav {
     gap: 20px;
     padding: 0 40px;
 
-    transition: 0.6s;
+    transition: 0.5s;
   }
 
   .header-links.active {
@@ -1407,3 +1415,156 @@ nav {
   }
 }
   */
+
+
+  .app-icon li a {
+    transition: all 0.2s ease;
+}
+
+.app-icon li a:hover {
+    transform: translateY(-4px);
+}
+
+.app-icon li a:active {
+    transform: translateY(1px);
+}
+
+
+
+/* JOIN TO ORDER */
+.popular-soup-all a {
+    transition: background-color 0.2s ease;
+}
+
+.popular-soup-all a:hover {
+    background-color: #c13c0f; /* slightly darker than #d9480f */
+}
+
+.popular-soup-all a:active {
+    background-color: #a6330d; /* deeper press */
+}
+
+
+/* REGISTER YOUR KITCHEN */
+.partner-btn {
+    transition: background-color 0.2s ease;
+}
+
+.partner-btn:hover {
+    background-color: #a93226; /* darker than #c0392b */
+}
+
+.partner-btn:active {
+    background-color: #922b21; /* deeper press */
+}
+
+
+.popular-soup-all a,
+.partner-btn {
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.popular-soup-all a:active,
+.partner-btn:active {
+    opacity: 0.9;
+}
+
+
+
+
+
+.footer-link2 a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* HOVER */
+.footer-link2 a:hover {
+    color: #d9480f;
+}
+
+/* CLICK */
+.footer-link2 a:active {
+    opacity: 0.7;
+}
+
+
+
+.footer-link2 a {
+    position: relative;
+}
+
+.footer-link2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1px;
+    background: #d9480f;
+    transition: width 0.2s ease;
+}
+
+.footer-link2 a:hover::after {
+    width: 100%;
+}
+
+
+
+
+.footer-icons img {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+/* HOVER → slight zoom out feel (actually scale up a bit) */
+.footer-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* CLICK → press back */
+.footer-icons img:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.footer-icons a {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer-icons a:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+
+
+
+/* TARGET THE WHOLE CARD */
+.popular-soup ul li a {
+    display: block;
+    transition: transform 0.25s ease;
+}
+
+/* HOVER → lift card */
+.popular-soup ul li a:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE ZOOM */
+.popular-soup ul li img {
+    transition: transform 0.3s ease;
+}
+
+.popular-soup ul li a:hover img {
+    transform: scale(1.05);
+}
+
+/* TEXT EMPHASIS */
+.popular-soup ul li a:hover h5 {
+    color: #d9480f;
+}
