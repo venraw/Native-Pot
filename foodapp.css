@@ -1568,3 +1568,69 @@ nav {
 .popular-soup ul li a:hover h5 {
     color: #d9480f;
 }
+
+
+
+
+
+
+
+/* ===== NAV LINK HOVER ===== */
+.header-links a {
+    padding: 8px 16px;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* underline that slides in on hover */
+.header-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fab005;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.header-links a:hover {
+    color: #fab005; /* text turns yellow on hover */
+}
+
+.header-links a:hover::after {
+    width: 60%; /* underline slides in */
+}
+
+/* ===== REGISTER BUTTON HOVER ===== */
+.header-register a {
+    background-color: #fab005;
+    padding: 8px 32px;
+    margin-left: 72px;
+    border-radius: 20px;
+    color: #212529;
+    font-weight: 400;
+    transition: background-color 0.3s ease, 
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+    position: relative; /* overrides inherited ::after */
+}
+
+/* remove underline effect from register button */
+.header-register a::after {
+    display: none;
+}
+
+.header-register a:hover {
+    background-color: #d9480f; /* shifts to your orange brand color */
+    color: white;
+    transform: translateY(-2px); /* slight lift */
+    
+}
+
+.header-register a:active {
+    transform: translateY(0); /* pushes back down on click */
+}
