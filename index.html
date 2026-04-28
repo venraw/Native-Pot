@@ -304,7 +304,7 @@
         <div class="Spotlight-card">
 
             <div class="spotlight-image">
-            <img src="chef isaa2.png" loading="lazy">
+            <img src="Chef Isaa.webp" loading="lazy">
             </div>
 
         <div class="spotlight-text">
@@ -834,6 +834,10 @@
  </div>
  </section>
 
+
+ <a href="#top" class="back-to-top" id="backToTop">
+  <i class="fas fa-arrow-up"></i> </a>
+
  
 
  <div class="copyright">
@@ -916,6 +920,23 @@ window.addEventListener('touchend', () => isUserScrolling = false);
     once: true
     });
     </script>
+
+
+
+
+<script>
+  const backToTopButton = document.querySelector("#backToTop");
+
+  window.addEventListener("scroll", () => {
+    // If the user has scrolled more than 300px down
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.add("show");
+    } else {
+      // If the user is at the top (less than 300px)
+      backToTopButton.classList.remove("show");
+    }
+  });
+</script>
 
     
     

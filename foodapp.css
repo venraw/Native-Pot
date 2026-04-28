@@ -917,6 +917,54 @@ nav {
 
 
 
+.back-to-top {
+  position: fixed;      /* Keeps it stuck in one spot on the screen */
+  bottom: 20px;         /* 20px from the bottom edge */
+  right: 20px;          /* 20px from the right edge */
+  background-color: #ff4500; /* Use your Native Pot orange! */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;   /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;        /* Ensures it stays above all other sections */
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #e63e00;
+  transform: translateY(-5px); /* Gentle lift on hover */
+}
+
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* ... your other styles ... */
+  
+  /* Add these two lines */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+/* We will use JavaScript to add this "active" class */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
 
 
 
@@ -1907,8 +1955,6 @@ nav {
         gap: 20px;
     }
 }
-
-
 
 
 
