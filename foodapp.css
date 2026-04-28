@@ -257,6 +257,10 @@ nav {
     margin: 10px 0;
 }
 
+.app-icon img {
+    width: 24px;
+}
+
 .app-icon li a{
     display: flex;
     padding: 8px 24px;
@@ -1609,7 +1613,7 @@ nav {
 .header-register a {
     background-color: #fab005;
     padding: 8px 32px;
-    margin-left: 72px;
+    /*margin-left: 72px;*/
     border-radius: 20px;
     color: #212529;
     font-weight: 400;
@@ -1634,3 +1638,278 @@ nav {
 .header-register a:active {
     transform: translateY(0); /* pushes back down on click */
 }
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .header {
+        min-height: auto;
+        padding-bottom: 40px; /* gives it a clean ending */
+    }
+
+
+    /* 
+    .download-app {
+        flex-direction: row;   force horizontal 
+        gap: 16px;
+        justify-content: center;
+    
+    }
+
+        .app-icon {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .app-icon li {
+        margin: 0 !important;  REMOVE vertical spacing 
+    }
+
+    */
+
+
+    .header-links.active {
+    right: 0;
+    box-shadow: -100vw 0 0 100vw rgba(0,0,0,0.5);
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .download-app {
+        flex-direction: row; 
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .app-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 32px; /* Bigger gap for bigger tablet screens */
+    }
+
+    .app-icon li {
+        margin: 0; 
+    }
+}
+
+
+/* 1. MOBILE VIEW (iPhone / Small Phones) */
+/* This covers everything up to 767px */
+@media (max-width: 767px) {
+    .download-app {
+        flex-direction: column !important; /* Forces vertical stack */
+        align-items: center;
+        margin-left: 0; /* Center it on mobile */
+    }
+
+    .app-icon {
+        display: flex;
+        flex-direction: column !important; /* Stack buttons vertically */
+        gap: 12px;
+        padding: 0;
+    }
+
+    .app-icon li {
+        margin: 0 !important;
+        width: 100%; /* Makes list item full width */
+        display: flex;
+        justify-content: center;
+    }
+
+    .app-icon li a {
+        width: 240px; /* Gives buttons a consistent, professional width */
+        justify-content: center;
+        padding: 12px 0;
+    }
+}
+
+/* 2. IPAD MINI / TABLET VIEW */
+/* This specifically targets 768px (iPad Mini width) up to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .download-app {
+        flex-direction: row !important; /* Side-by-side on iPad */
+        justify-content: center;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .app-icon {
+        display: flex;
+        flex-direction: row !important; /* Row layout for tablets */
+        gap: 16px;
+    }
+
+    .app-icon li {
+        margin: 0 !important;
+    }
+
+    .app-icon li a {
+        padding: 8px 20px;
+        white-space: nowrap; /* Prevents text from wrapping */
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .local-eatry {
+        /* 1. Reset columns to a fixed size so they don't stretch */
+        grid-template-columns: repeat(2, 280px) !important; 
+        
+        /* 2. Center the entire grid inside the section */
+        justify-content: center !important; 
+        
+        /* 3. Add spacing between the centered cards */
+        gap: 32px !important; 
+        
+        /* 4. Ensure no leftover padding is pushing it to the left */
+        padding: 0 16px !important;
+        margin: 72px auto !important;
+    }
+
+    .restaurant-section h1 {
+        text-align: center !important;
+        margin-bottom: 40px;
+    }
+
+    /* Keep the cards consistent */
+    .restaurant-card {
+        margin: 0 auto; /* Extra insurance */
+    }
+
+
+
+
+   
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* 1. Reduce the gap between links so they fit in one row */
+    .header-links {
+        gap: 4px !important; /* Tighten the space between links */
+    }
+
+    /* 2. Shrink the font size slightly for tablet screens */
+    .header-links a {
+        font-size: 15px !important; 
+        padding: 8px 10px !important; /* Reduce side padding on links */
+        white-space: nowrap !important; /* FORBID the text from breaking into two lines */
+    }
+
+    /* 3. Adjust the Register button to save space */
+    .header-register a {
+        margin-left: 20px !important; /* Reduce that big 72px gap from desktop */
+        padding: 6px 20px !important;
+        font-size: 14px !important;
+    }
+
+    /* 4. Ensure the Nav container uses all available space */
+    nav {
+        padding: 8px 4% !important; /* Reduce the 9% side padding just for the NAV */
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .process-card-all {
+        display: flex !important;
+        flex-direction: row !important; /* Force horizontal */
+        flex-wrap: nowrap !important;   /* Prevent wrapping to a second line */
+        justify-content: space-between; /* Spread them out evenly */
+        gap: 24px;                      /* Tighten gap so they fit */
+        padding: 0 5%;                  /* Give some side breathing room */
+    }
+
+    .process-card {
+        flex: 1 !important;     /* Allow them to shrink equally */
+        min-width: 0 !important; /* Remove any minimum width that forces a wrap */
+        max-width: none;        /* Allow them to use available space */
+    }
+
+    .process-card img {
+        width: 100px; /* Slightly smaller icons so they fit on one line */
+        height: auto;
+    }
+
+    .process-card h4 {
+        font-size: 16px; /* Adjust font size for tablet */
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* 1. The Container: Force everything to the left with 9% padding */
+    .header-text {
+        padding-left: 9% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important; /* Forces all children to the same left line */
+        text-align: left !important;
+    }
+
+    /* 2. The Delivery Badge: Remove any centering or auto-margins */
+    .header-delivery {
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+        width: auto !important;
+    }
+
+    /* 3. The Search Bar: Ensure it doesn't have margin: auto */
+    .header-search {
+        margin-left: 0 !important; /* Overrides centering */
+        margin-right: 0 !important;
+        width: 100% !important;
+        max-width: 600px !important; /* Keeps it from being too long on tablet */
+    }
+
+    /* 4. Fix the Headline and Paragraph */
+    .header-text h1, 
+    .header-short {
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 650px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* 1. Target the container holding the Apple/Google buttons */
+    .download-app {
+        display: flex !important;
+        justify-content: center !important; /* Centers the buttons internally */
+        align-self: center !important;    /* <--- THE MAGIC LINE: Centers the whole block */
+        
+        margin-left: -9% !important;     /* Offsets the 9% padding of the parent to reach the TRUE center */
+        width: 100% !important;
+        margin-top: 32px;
+    }
+
+    .app-icon {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
